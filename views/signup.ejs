@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/CSS/sign.css">
+</head>
+
+<body style="padding-top: 70px;"> <!-- Add padding to body for navbar -->
+
+    <%- include('./partials/nav') %>
+    <div class="container mt-4">
+        <h1 class="top text-center fw-bold font-monospace mb-4" style="color: #fff;">Signup Page</h1>
+        <form class="mt-4" action="/user/signup" method="post">
+
+            <div class="mb-3">
+                <label for="fullName" class="form-label" style="color: #fff;">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" aria-describedby="fullName"
+                    style="background-color: #333; color: #fff; border-color: #555;">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" style="color: #fff;">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" style="background-color: #333; color: #fff; border-color: #555;">
+                <div id="emailHelp" class="form-text" style="color: #aaa;">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" style="color: #fff;">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                    style="background-color: #333; color: #fff; border-color: #555;">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff;">Submit</button>
+        </form>
+    </div>
+
+    <!-- Include your scripts -->
+    <%- include('./partials/scripts') %>
+</body>
+
+</html>

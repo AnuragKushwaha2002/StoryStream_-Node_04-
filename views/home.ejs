@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+</head>
+
+<body class="main bg-dark">
+    <div class="point"></div>
+    <%- include('./partials/nav') %>
+    <div class="container mt-5 pt-4">
+        <h1 class="mb-4 text-light">Blogs</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <% blogs.forEach(blog => { %>
+                <div class="col mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="<%= blog.coverImageURL %>" class="card-img-top rounded-top" alt="Blog Image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><%= blog.title %></h5>
+                            <p class="card-text text-white mb-3" style="display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                <%= blog.body %>
+                            </p>
+                            <a href="/blog/<%= blog._id %>" class="btn btn-primary align-bottom">View</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    <%- include('./partials/scripts') %>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin-top: 100px; /* Add margin at the top */
+}
+
+h1 {
+    font-size: 36px; /* Increase heading size */
+    font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+img {
+    display: block; /* Center the image */
+    margin: 0 ; /* Center horizontally */
+    max-width: 100%; /* Set maximum width */
+}
+
+.center-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.image_top{
+    width: 70%;
+            display: block;
+            margin: 0 auto;
+}
+/* Additional styling for comments if needed */
+.comment {
+    margin-top: 20px; /* Example margin for comments */
+}
+///////
+.created-by {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.created-by img {
+    margin-right: 10px; /* Add space between image and name */
+    display: inline-block; /* Ensure image and text are in the same line */
+    vertical-align: middle; /* Align image vertically with the text */
+}
+
+.created-by span {
+    display: inline-block; /* Ensure text is in the same line as the image */
+    vertical-align: middle; /* Align text vertically with the image */
+}
+////comment
+.comment-form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.comment-input {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.comment-input input {
+    flex: 1; /* Take up remaining space */
+}
+
+.btn-circle {
+ margin:10px;
+    border-radius: 10%; /* Make the button circular */
+    width: 100px;
+    height: 40px;
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Adjust button styles */
+.btn-circle:hover {
+    background-color: #0069d9; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.comment_1{
+    
+    margin-left:70px;
+}

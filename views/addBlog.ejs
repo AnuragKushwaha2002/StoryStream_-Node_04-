@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    
+
+    <title>Add Blog Page</title>
+    <style>
+        /* Custom styles for wider input fields */
+        .form-control {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body class="bg-dark" style="padding-top: 70px;"> <!-- Add padding for navbar -->
+
+    <%- include('./partials/nav') %>
+    <div class="container mt-4 ">
+        <h1 class="top text-center fw-bold font-monospace mb-4" style="color: #fff;">Add Blog Page</h1>
+        <form action="/blog" method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="coverImage" class="form-label" style="color: #fff;">Cover Image</label>
+                <input type="file" class="form-control" id="coverImage" name="coverImage" aria-describedby="coverImage"
+                    style="background-color: #333; color: #fff; border-color: #555;">
+            </div>
+
+            <div class="mb-3">
+                <label for="title" class="form-label" style="color: #fff;">Title</label>
+                <input type="text" class="form-control" id="title" name="title" aria-describedby="title"
+                    style="background-color: #333; color: #fff; border-color: #555; padding: 0.75rem;">
+            </div>
+
+            <div class="mb-3">
+                <label for="body" style="color: #fff;">Body</label>
+                <textarea class="form-control" placeholder="..." id="body" name="body" style="height: 150px; background-color: #333; color: #fff; border-color: #555; padding: 0.75rem;"></textarea>
+            </div>
+
+            <button class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; padding: 0.5rem 1rem;">Submit</button>
+        </form>
+    </div>
+
+    <!-- Include your scripts -->
+    <%- include('./partials/scripts') %>
+</body>
+
+</html>

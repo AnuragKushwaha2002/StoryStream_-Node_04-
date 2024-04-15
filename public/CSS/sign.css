@@ -1,0 +1,23 @@
+
+    body {
+        background-color: #202020; /* Dark background color */
+    }
+
+    .container {
+    
+        max-width: 400px; /* Limit width for better readability */
+        margin-top:100px
+    }
+
+    .form-label {
+        margin-bottom: 0.5rem; /* Add spacing below labels */
+    }
+
+    .form-control {
+        padding: 0.375rem 0.75rem; /* Adjust padding for inputs */
+    }
+
+    .btn-primary {
+        color: #fff; /* Text color for button */
+    }
+

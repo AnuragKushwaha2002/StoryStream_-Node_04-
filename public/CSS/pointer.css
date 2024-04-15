@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.point {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Use rgba for transparency */
+    border-radius: 50%;
+    color: aqua;
+    position: absolute;
+    transition: background-color 0.2s ease; /* Smooth transition */
+    mix-blend-mode: difference;
+    z-index: 1; /* Ensure the point is on top of the cards */
+}
+
+.card:hover .point {
+    background-color: rgba(0, 0, 0, 0.5); /* Change color on hover */
+}
